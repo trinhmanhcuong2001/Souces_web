@@ -1,0 +1,419 @@
+
+.header__bar-btn {
+	display: none;
+}
+.header__bar-overlay{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.2);
+	z-index: 1;
+	display: none;
+	animation: fadein linear 0.2s;
+}
+.header__bar-mobie{
+	position: fixed;
+	top: 54px;
+	left: 0;
+	bottom: 0;
+	width: 60%;
+	background-color: white;
+	z-index: 2;
+	float: left;
+	transform: translateX(-100%);
+	opacity: 0;
+	transition: transform linear 0.2s, opacity linear 0.2s;
+
+}
+.header__bar-tablet-mobie-list{
+	background-color: #e4e2e2;
+    margin-top: 10px;
+}
+.header__bar-mobie-list{
+	list-style: none;
+	display: inline-block;
+	width: 32.33333%;
+	padding-top: 10px;
+}
+.header__bar-mobie-item{
+	padding: 7.5px 0;
+}
+.header__bar-mobie-item a{
+	text-decoration: none;
+}
+.header__bar-mobie-item span a{
+    font-size: 16px;
+    font-weight: bold;
+    color: orange;
+}
+.header__bar-mobie-item a{
+	color: black;
+	font-size: 14px;
+}
+.header__bar-mobie-close > i{
+	font-size: 18px;
+    color: #666;
+    position: absolute;
+    top: 0;
+    right: 1px;
+}
+.mobie__input{
+	display: none;
+}
+.mobie__input:checked ~ .header__bar-overlay{
+	display: block;
+}
+.mobie__input:checked ~ .header__bar-mobie{
+	transform: translateX(0%);
+	opacity: 1;
+}
+.mobietablet-timkiem{
+	margin-top: 30px;
+}
+.mobietablet-timkiem a{
+	font-size: 12px;
+	height: 25px;
+	line-height: 25px;
+	border: 1px solid #e5e5e5;
+	display: inline-block;
+	padding: 6px;
+	border-radius: 5px;
+}
+.mobietablet-timkiem input{
+	height: 25px;
+    margin-left: 20px;
+    width: 85%;
+    outline: none;
+    border: 1px solid #e5e5e5;
+    padding-left: 11px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+
+@keyframes fadein {
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+
+
+    /*  Mobile & Tablet */
+@media (max-width: 63.9375em) {
+
+    
+}
+
+/* Tablet: min-width >= 740px and max-width < 1023px */
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+    .modal__body{
+        margin-top: 54px;
+    } 
+    .header{
+    	border-bottom: 1px solid #ccc;
+        position: sticky;
+        top: 0;
+        background-color: white;
+        z-index: 2;
+        box-shadow: 0 0 15px rgb(0 0 0 / 30%);
+    }
+    .logochinh img{
+    	margin-left: 2em;
+    }
+    .header__bar-btn{
+    	display: block;
+    	margin-top: 15px;
+        margin-left: 16px;
+    }
+
+    .header__navbar-item{
+    	margin-right: 0;
+    }
+    .header__navbar-item.internatinal a{
+    	margin: 0;
+    }
+    .header__navbar-item.timkiem{
+    	margin: 0;
+    }
+    .header__navbar-item.dangnhap{
+    	margin-right: 16px;
+    }
+    .nav__main{
+    	display: none;
+    }
+    .container{
+    	margin-top: -53px;
+    	margin-left: 16px;
+        margin-right: 16px;
+    }
+    .flexbox__hightlight{
+    	width: 100%;
+    	margin-right: 33px;
+    }
+    .quangcao-hightlight{
+    	display: none;
+    }
+    .chuyenmuc-list__input{
+        margin-right: 33px;
+    }
+    .chuyenmuc-list__input input{
+        width: 230px;
+    }
+    .hightlight-item1-img{
+    	width: 59%;
+    	height: auto;
+    }
+    .hightlight-item1-content{
+    	width: 41%;
+    }
+
+
+
+    .tintrongngay{
+    	height: auto;
+    	padding-bottom: 33px;
+    } 
+    .tintonghop{
+    	width: 50%;
+    }
+    .tintonghop-list{
+    	height: auto;
+    	padding-bottom: 0;
+    	margin-bottom: -11px;
+    }
+    .tintonghop-img img{
+        width: 198px;
+    	height: auto;
+    }
+    .tinmoinhat{
+    	width: 50%;
+    }
+    .tinmoinhat-hightlight{
+    	margin-right: 33px;
+    }
+    .tinmoinhat-quangcao img{
+    	width: 320px;
+    }
+    .tinmoinhat-item{
+    	margin-right: 33px;
+    }
+    .sao24h{
+    	width: auto;
+    	min-width: auto;
+    }
+    .sao24h-list{
+    	width: 100%;
+    	height: auto;
+    }
+    .sao24h-item{
+    	margin-right: 0;
+    	padding-left: 15px;
+    }
+    .anhnoibat{
+    	display: none;
+    }
+    .footer{
+    	min-width: 784px;
+    	padding: 40px 0 20px;
+    }
+    .footer-container{
+    	margin-left: 16px;
+    }
+    .footer-item{
+    	width: auto;
+    	margin-right: 55px;
+    }
+    .footer-item-img{
+    	display: flex;
+    	margin-left: 0;
+    }
+  
+
+}
+
+/* Mobile: max-width < 739px */
+@media only screen and (max-width: 46.1875em) {
+   .auth-form{
+    width: 100%;
+   }
+   .auth-form-login{
+    width: 100%;
+   }
+   .auth-form__social span{
+    margin: 0;
+   }
+   .modal__body {
+    margin-top: 54px;
+   }
+   .header{
+   	border-bottom: 1px solid #ccc;
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    width: 100%;
+    box-shadow: 0 0 15px rgb(0 0 0 / 30%);
+    z-index: 3;
+   }
+   .nav__main{
+   	display: none;
+   }
+   .header__navbar-item.internatinal{
+   	display: none;
+   }
+   .header__navbar-item.timkiem{
+   	display: none;
+   }
+   .dangnhap-mobie{
+   	display: none;
+   }
+   .header__bar-btn{
+    	display: block;
+    	margin-top: 15px;
+        margin-left: 16px;
+    }
+    .dangnhap i{
+    	margin-top: 8px;
+    }
+    .container__flexbox{
+    	flex-direction: column;
+    	height: auto;
+    }
+    .container {
+    	margin-top: -60px;
+    	padding-left: 10px;
+    	padding-right: 10px;
+    }
+    .container__chuyenmuc{
+        display: none;
+    }
+    .flexbox__hightlight {
+    	width: 100%;
+        margin-top: 30%;
+    }
+    .flexbox__hightlight-item1{
+        flex-direction: column;
+        height: auto;
+        border-bottom: 1px solid #ccc;
+    }
+    .quangcao-hightlight{
+    	display: none;
+    }
+    .hightlight-item1-img a img{
+    	width: 100%;
+    	height: auto;
+    }
+    .hightlight-item1-content{
+    	    width: 100%;
+            height: auto;
+            background-color: white;
+    }
+    .hightlight-item1-content a h3{
+    	color: orange;
+    }
+    .flexbox__hightlight-item2{
+    	flex-direction: column;
+    	margin-top: 10px;
+    	height: auto;
+    }
+    .hightlight-item2-content{
+    	padding: 0 10px;
+    }
+    .gachdoc2{
+    	display: none;
+    }
+    .tintrongngay{
+    	flex-direction: column;
+    	height: auto;
+    }
+    .tintonghop{
+    	width: 100%;
+    	height: auto;
+    	flex-direction: column;
+    }
+    .tintonghop-list{
+    	height: auto;
+    	flex-direction: column;
+    	margin-top: 20px;
+    	padding-bottom: 0;
+    }
+    .tintonghop-img img{
+    	width: 100%;
+    }
+    .tintonghop-item h3{
+    	margin: 0;
+    	margin-left: 0;
+    	margin-top: 12px;
+    }
+    .tintonghop-item p{
+    	margin-left: 0;
+    }
+    .sao24h{
+    	min-width: 0;
+    }
+    .sao24h-list{
+    	flex-direction: column;
+    	margin-top: 0;
+    	min-height: none;
+    }
+    .sao24h-item{
+    	margin-right: 0;
+    	margin-bottom: 10px;
+    }
+    .anhnoibat{
+    	display: none;
+    }
+    .tinmoinhat {
+    	width: 100%;
+    }
+    .tinmoinhat-hightlight{
+    	margin-left: 0;
+    	border-bottom: 1px solid #ccc;
+        margin-bottom: 15px;
+    }
+    .tinmoinhat-section.gachdoc3{
+    	margin-top: 0 !important;
+    }
+    .tinmoinhat-item{
+    	margin-left: 0;
+    	margin-bottom: 20px;
+    	border-bottom: 1px solid #ccc;
+    	padding-bottom: 16px;
+    }
+    .tinmoinhat-quangcao img{
+    	margin-left: 0;
+    	margin-bottom: 0;
+    	width: 100%;
+    	height: auto;
+    	margin-top: 10px;
+    }
+    .footer{
+    	padding: 40px 0 20px;
+    	height: auto;
+    }
+    .footer-container{
+    	padding-left: 10px;
+        padding-right: 10px;
+    }
+    .footer-logo{
+    	margin-left: 75px;
+    }
+    .footer-list{
+        flex-direction: column;
+    }
+    .footer-item{
+    	width: 100%;
+    	margin-right: 0;
+    	margin-bottom: 20px;    }
+    .footer-item p{
+    	line-height: 200%;
+    }
+    .header__bar-mobie{
+    	width: 100%;
+    }
+}
+

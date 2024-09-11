@@ -1,0 +1,11 @@
+name = User Permissions
+description = Provides the ability to manage permissions for individual users without the need to manually create a role for an individual user.
+package = Access control
+core = 6.x
+
+; Information added by drupal.org packaging script on 2011-12-10
+version = "6.x-1.2"
+core = "6.x"
+project = "user_permissions"
+datestamp = "1323507044"
+

@@ -1,0 +1,67 @@
+
+.container-login{
+	width: 100%;
+	height: 523px;
+	background-color: orange;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-table{
+	width:400px;
+	height: auto;
+	background:white ;
+	padding-left: 30px;
+	padding-right: 30px;
+	border-radius: 5px;
+}
+.container-table__section{
+	font-size: 20px;
+	margin-top: 30px;
+	font-weight: 400;
+}
+.container-table__input input{
+	width: 100%;
+	height: 40px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding-left: 10px;
+	font-size: 14px;
+	border-radius: 8px;
+	border: 1px solid #ccc;
+	outline: none;
+}
+.container-table__button button{
+	width: 100%;
+	height: 40px;
+	background-color: orange;
+	color: white;
+	font-size: 14px;
+	border-radius: 8px;
+	border: none;
+	margin-top: 16px;
+}
+.container-table__dangky{
+	font-size: 14px;
+}
+.container-table__rememberpass{
+	text-align: right;
+	font-size:11px;
+	margin-top:10px;
+	margin-bottom: 21px;
+}
+.container-table__rememberpass a{
+	text-decoration: none;
+	color:#05a;
+}
+.container-table__dangky{
+	font-size:13px;
+	text-align:center;
+	margin-top:20px;
+	color:rgba(0,0,0,.26);
+	margin-bottom: 30px;
+}
+.container-table__dangky a{
+	text-decoration:none;
+	color:orange
+}

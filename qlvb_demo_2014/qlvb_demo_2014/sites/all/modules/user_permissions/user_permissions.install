@@ -1,0 +1,16 @@
+<?php
+
+/**
+ * Remove any roles created by this module.
+ */
+function user_permissions_uninstall() {
+  $roles = user_roles();
+  
+  foreach ($roles as $rid => $name) {
+    if (strpos($name, '_user_role_') !== FALSE) {
+      db_query("DELETE FROM {permission} WHERE rid = %d", $rid);
+      db_query("DELETE FROM {users_roles} WHERE rid = %d", $rid);
+      db_query("DELETE FROM {role} WHERE rid = %d", $rid);
+    }
+  }
+}
